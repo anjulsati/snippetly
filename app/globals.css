@@ -1,0 +1,75 @@
+@import "tailwindcss";
+
+@theme {
+    --font-sans: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
+    --font-mono: var(--font-jetbrains), ui-monospace, SFMono-Regular, Menlo, monospace;
+}
+
+@layer base {
+    html {
+        color-scheme: dark;
+        scroll-behavior: smooth;
+    }
+
+    ::selection {
+        background-color: rgb(52 211 153 / 0.28);
+        color: #ecfdf5;
+    }
+
+    body {
+        text-rendering: optimizeLegibility;
+    }
+
+    /* Slim scrollbars for code panes */
+    pre::-webkit-scrollbar,
+    .code-scroll::-webkit-scrollbar {
+        height: 8px;
+        width: 8px;
+    }
+    pre::-webkit-scrollbar-thumb,
+    .code-scroll::-webkit-scrollbar-thumb {
+        background: #1b2637;
+        border-radius: 999px;
+    }
+    pre::-webkit-scrollbar-track,
+    .code-scroll::-webkit-scrollbar-track {
+        background: transparent;
+    }
+}
+
+@keyframes fade-up {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.animate-fade-up {
+    animation: fade-up 0.5s ease both;
+}
+
+.animate-fade-up-delay-1 {
+    animation: fade-up 0.5s ease 0.1s both;
+}
+
+.animate-fade-up-delay-2 {
+    animation: fade-up 0.5s ease 0.2s both;
+}
+
+@keyframes pulse-dot {
+    0%,
+    100% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0.35;
+    }
+}
+
+.animate-pulse-dot {
+    animation: pulse-dot 1.2s ease-in-out infinite;
+}
