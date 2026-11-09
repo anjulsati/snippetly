@@ -7,6 +7,8 @@
 A fast, login-free code-snippet platform — write in a full Monaco editor, run it live,
 and share it with a permanent URL. Built with Next.js App Router, TypeScript, and Tailwind CSS.
 
+**🔴 Live on Vercel — https://snippetly-olive.vercel.app**
+
 [![Next.js](https://img.shields.io/badge/Next.js-15-black?logo=next.js)](https://nextjs.org/)
 [![TypeScript](https://img.shields.io/badge/TypeScript-5-3178C6?logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
 [![React](https://img.shields.io/badge/React-19-61DAFB?logo=react&logoColor=black)](https://react.dev/)
